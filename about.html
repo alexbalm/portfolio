@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo_icon.PNG">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/47d86a2403.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+</head>
+
+<body>
+
+    <header class="top" id="#page-top">
+        <a class="jump-to-content-link" href="#home">
+            Jump to content
+        </a>
+        <div class="bar white card" id="navbar">
+            <a href="index.html" class="bar-item button"><i class="logo hover-opacity responsive"></i></a>
+            <!-- Right-float navbar links -->
+            <nav class="right small-hide">
+                <a href="about.html" class="active bar-item button"><i class="fa fa-user hover-opacity"></i> ABOUT ME</a>
+                <a href="services.html" class="bar-item button"><i class="fa fa-th hover-opacity"></i> SERVICES</a>
+                <a href="contact.html" class="bar-item button"><i class="fa fa-envelope hover-opacity"></i> CONTACT</a>
+            </nav>
+            <!-- Replace right-float navbar links with menu bar for smaller screens -->
+            <a href="javascript:void(0)" class="bar-item button right hide" onclick="menu_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Menu sidebar -->
+    <nav class="sidebar bar-block black card animate-left medium-hide large-hide" style="display:none" id="sidebar">
+        <a href="javascript:void(0)" onclick="menu_close()" class="bar-item button large padding-16">Close X</a>
+        <a href="about.html" onclick="menu_close()" class="bar-item button">ABOUT ME</a>
+        <a href="services.html" onclick="menu_close()" class="bar-item button">SERVICES</a>
+        <a href="contact.html" onclick="menu_close()" class="bar-item button">CONTACT</a>
+    </nav>
+
+ 
+    <main class="container background-image-pages" style="padding:128px" id="home">
+            <h1 class="center">ABOUT ME</h1>
+            <p class="center large">I am a student studying Information Science at the University of Michigan, specializing in UX Design and Data Analytics.</p>
+
+        <div class="row row-padding" style="margin-top:64px">
+            
+            <div class="column">
+                <div class="card">
+                    <img src="images/portrait.JPG" alt="Alexandra M Balmaceda" style="width:50%">
+                    <div class="container">
+                        <h2>Alexandra M Balmaceda</h2>
+                        <p class="opacity">UX Designer & Data Scientist</p>
+                        <p>Some text about myself here.</p>
+                        <p><a href="contact.html" class="grey button"><i class="fa fa-envelope"></i> Contact</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="column">
+                <h3>My Skills.</h3>
+                <p>Some text about my skills here...<br>
+                continued...</p>
+                <p>More text about my skills here...<br>
+                continued...</p>
+                <br>
+                <p class="wide"><i class="fa fa-palette margin-right"></i>Interaction Design</p>
+                <div class="grey">
+                    <div class="container dark-grey center" style="width:85%">85%</div>
+                </div>
+                <p class="wide"><i class="fas fa-chart-bar margin-right"></i>Data Analytics</p>
+                <div class="grey">
+                    <div class="container dark-grey center" style="width:80%">80%</div>
+                </div>
+                <p class="wide"><i class="fa fa-code margin-right"></i>Coding</p>
+                <div class="grey">
+                    <div class="container dark-grey center" style="width:70%">70%</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-padding" style="margin-top:64px">
+
+            <div class="column">
+                <div class="quarter">
+                    <!-- insert image below -->
+                    <i class="fa fa-diamond margin-bottom xxxlarge center"></i>
+                    <p class="xxlarge">Creative</p>
+                    <p>Some text here.</p>
+                </div>
+                <div class="quarter">
+                    <!-- insert image below -->
+                    <i class="fa fa-heart margin-bottom xxxlarge"></i>
+                    <p class="xxlarge">Adaptable</p>
+                    <p>Some text here.</p>
+                </div>
+                <div class="quarter">
+                    <i class="fa fa-users margin-bottom xxxlarge"></i>
+                    <p class="xxlarge">Collaborative</p>
+                    <p>Some text here.</p>
+                </div>
+                <div class="quarter">
+                    <i class="fa fa-desktop xxxlarge"></i>
+                    <p class="xxlarge">Persistent</p>
+                    <p>Some text here.</p>
+                </div>
+            </div>
+    
+            <div class="column" style="padding:128px 16px">
+                <div class="row-padding">
+                    <div class="col m6">
+                        <h4>I know data. I know design.</h4>
+                        <p>Some text here.</p><br>
+                        <p><a href="services.html" class="black button"><i class="fa fa-th"> </i> Services</a><br></p>
+                        <br>
+                    </div>
+                    <div class="col m6">
+                        <img class="image large-rounded img-fade" src="images/phone_design.jpeg" alt="Phone Design" width="700" height="394">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="center black padding-64">
+        <a href="#page-top" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>Top of page</a><br>
+        <br>
+        <div class="xlarge section">
+            <i class="fa fa-facebook hover-opacity"></i>
+            <i class="fa fa-instagram hover-opacity"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
+        </div><br>
+        <p>Alexandra Maritza Balmaceda | University of Michigan School of Information | B.S.I. 2022</p>
+    </footer>
+
+    <!-- Functions -->
+    <script>
+        // Toggle sidebar
+        var sidebar = document.getElementById("sidebar");
+        function menu_open() {
+            if (sidebar.style.display === 'block') {
+                sidebar.style.display = 'none';
+            } else {
+                sidebar.style.display = 'block';
+            }
+        }
+        // Close button
+        function menu_close() {
+            sidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

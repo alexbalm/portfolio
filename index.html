@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo_icon.PNG">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/47d86a2403.js" crossorigin="anonymous"></script>
+    <title>Alexandra M Balmaceda</title>
+</head>
+
+<body>
+
+    <header class="top" id="#page-top">
+        <a class="jump-to-content-link" href="#home">
+            Jump to content
+        </a>
+        <div class="bar white card" id="navbar">
+            <a href="index.html" class="bar-item button"><i class="logo hover-opacity responsive"></i></a>
+            <!-- Right-float navbar links -->
+            <nav class="right small-hide">
+                <a href="about.html" class="bar-item button"><i class="fa fa-user hover-opacity"></i> ABOUT ME</a>
+                <a href="services.html" class="bar-item button"><i class="fa fa-th hover-opacity"></i> SERVICES</a>
+                <a href="contact.html" class="bar-item button"><i class="fa fa-envelope hover-opacity"></i> CONTACT</a>
+            </nav>
+            <!-- Replace right-float navbar links with menu bar for smaller screens -->
+            <a href="javascript:void(0)" class="bar-item button right hide" onclick="menu_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Menu sidebar -->
+    <nav class="sidebar bar-block black card animate-left medium-hide large-hide" style="display:none" id="sidebar">
+        <a href="javascript:void(0)" onclick="menu_close()" class="bar-item button large padding-16">Close X</a>
+        <a href="about.html" onclick="menu_close()" class="bar-item button">ABOUT ME</a>
+        <a href="services.html" onclick="menu_close()" class="bar-item button">SERVICES</a>
+        <a href="contact.html" onclick="menu_close()" class="bar-item button">CONTACT</a>
+    </nav>
+
+    <!-- Header w/ background image -->
+    <main class="background-image-index display-container" id="home">
+        <div class="display-left text-white" style="padding:48px">
+            <span class="jumbo small-hide">Alexandra M Balmaceda</span><br>
+            <span class="xxlarge large-hide medium-hide">Alexandra M Balmaceda</span><br>
+            <span class="large">Bridging the gap between people and technology.</span>
+            <p><a href="about.html" class="button white large padding-large margin-top opacity hover-opacity-off">Who I am</a></p>
+        </div>
+        <div class="display-bottom-left text-grey xlarge" style="padding:24px 48px">
+            <i class="fa fa-facebook hover-opacity"></i>
+            <i class="fa fa-instagram hover-opacity"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
+        </div>
+    </main>
+
+    <footer class="center black padding-64">
+        <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>Top of page</a><br>
+        <br>
+        <div class="xlarge section">
+            <i class="fa fa-facebook hover-opacity"></i>
+            <i class="fa fa-instagram hover-opacity"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
+        </div><br>
+        <p>Alexandra Maritza Balmaceda | University of Michigan School of Information | B.S.I. 2022</p>
+    </footer>
+
+    <!-- Functions -->
+    <script>
+        // Toggle sidebar
+        var sidebar = document.getElementById("sidebar");
+        function menu_open() {
+            if (sidebar.style.display === 'block') {
+                sidebar.style.display = 'none';
+            } else {
+                sidebar.style.display = 'block';
+            }
+        }
+        // Close button
+        function menu_close() {
+            sidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
